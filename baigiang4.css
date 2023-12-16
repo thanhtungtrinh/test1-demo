@@ -1,0 +1,122 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* full màn hình */
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(249, 196, 4);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.nav-item {
+    padding: 20px 30px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* ĐỔ MÀU KHI TRỎ VÀO THẺ a */
+a:hover {
+    background-color: rgb(174, 109, 4);
+    font-weight: bold;
+    color: rgb(242, 234, 234);
+}
+/* ĐỔ MÀU KHI TRỎ VÀO THẺ ĐANG HOẠT ĐỘNG */
+.active {
+    background-color: rgb(174, 109, 4);
+    font-weight: bold;
+    color: rgb(242, 234, 234);
+}
+
+
+.anhslide {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.anhmember {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.anhmember-item {
+    width: 20%;
+    margin: 20px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(240, 103, 5);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    margin: auto;
+}
+
+.anhmap {
+    width: 100%;
+}
+
+#khungtheband {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.khungbandmember-trai {
+    width: 50%;
+    margin: 50px;
+}
+
+.khungbandmember-phai {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+/* .nav {background: #f37c06;height: 40px} */
+/* .nav li{float: left; list-style: none; margin-right: 10px; padding: 10px 5px; width: 120px} */
+/* .nav li:hover {background: #f4b014;} */
+
+
+/* TẠO THANH MENU */
+/* * {margin: 0; padding: 0} */
+/* đoạn này sẽ dùng display: none để ẩn menu cấp 2 đi */
+.nav li ul li{display:none; margin-top: 30px}
+/* đoạn này là khi rê chuột qua phần tử li cấp 1 thì danh sách menu cấp 2 sẽ xổ ra do ta đặt là dispay: block */
+.nav li:hover ul li{display: block}
+.nav li a{color: #fff; text-decoration: none;}
+
+ul {
+    list-style: none;
+    }
